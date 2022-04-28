@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.30.3",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "@xstate/vue": "^2.0.0",
+    "xstate": "^4.31.0"
+  },
+  "name": "finite-state-machines"
+}

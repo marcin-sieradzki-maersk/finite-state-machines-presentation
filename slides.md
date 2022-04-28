@@ -19,10 +19,15 @@ drawings:
 # Developing stateful UI is hard
 
 <div class="flex gap-4 w-full items-center justify-center">
-  <img src="/error-success.jpg" class="h-72 w-72 rounded shadow" />
-  <img src="/no-keyboard.jpg" class="h-72 w-72 rounded shadow" />
+  <img src="/error-success.jpg" class="h-72 w-72 rounded-lg" />
+  <img src="/no-keyboard.jpg" class="h-72 w-72 rounded-lg" />
 </div>
 
+---
+
+<Center>
+  <img src="/happy-path.jpg" class="h-full rounded-lg" />
+</Center>
 ---
 
 <CenterHeading>
@@ -69,9 +74,8 @@ const fetchRandomImage = async () => {
 ---
 
 <Example/>
-
-<div class="bg-gray-700 p-4 rounded-lg absolute top-[30%] left-[30%]">
-  <ul>
+<div class="w-full h-full flex justify-center items-center mt-[-10%]">
+  <ul class="bg-gray-700 p-4 rounded-lg">
     <li>Image fetch fails?</li>
     <li>Loading indicator</li>
     <li>error message</li>
@@ -80,10 +84,9 @@ const fetchRandomImage = async () => {
   </ul>
 </div>
 
-
 ---
 
-# booleans to the rescue!
+# boolean flags to the rescue!
 
 ```js
 const isEmpty = ref(true);
@@ -96,7 +99,7 @@ const hasError = ref(false);
 
 ---
 
-```js {all|2|5,6,7|16,18}
+```js {all|3-5|11,12|14,16}
 const fetchRandomImage = async () => {
   try {
     isLoading.value = true;
@@ -117,10 +120,9 @@ const fetchRandomImage = async () => {
 };
 ```
 
-
 ---
 
-```js{all|4-11|13-15|19}
+```js{all|3-12|13-15|19}
   <div class="flex flex-col items-center justify-center">
     <h1 class="leading-8 text-3xl font-bold mb-4">Rick & Morty pics</h1>
     <div class="animate-pulse bg-gray-800" v-if="!hasLoaded">
@@ -165,7 +167,18 @@ const fetchRandomImage = async () => {
 
 <h1>Bottom up approach</h1>
 <div >
-  <ul class=" p-4 w-fit">
+  <ul class="p-4 w-fit">
+    <li>Quick to start coding</li>
+    <li>Easy to write</li>
+    <li>Works</li>
+  </ul>
+</div>
+
+---
+
+<h1>Bottom up approach</h1>
+<div >
+  <ul class="p-4 w-fit">
     <li>Difficult to test</li>
     <li>Difficult to understand</li>
     <li>Error/bug prone</li>
@@ -243,6 +256,16 @@ const fetchRandomImage = async () => {
 
 ---
 
+# Other attributes
+
+ <ul class="p-4 w-fit">
+  <li>Can be in exactly one of a finite number of states at any given time</li>
+  <li>Can change from one state to another in response to an action(transition)</li>
+  <li>Has predefined set of actions that trigger transitions</li>
+</ul>
+
+---
+
 <CenterHeading>
   Designing State Machines
 </CenterHeading>
@@ -297,11 +320,8 @@ const fetchRandomImage = async () => {
 
 <CenterHeading>
   Let's code something!
-  <br>
-    <br>
-  PS: questions at the end :)
 </CenterHeading>
 
 ---
 
-<StateMachineSolved/>
+<StateMachine/>

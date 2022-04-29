@@ -4,16 +4,15 @@
 - a lot of them a related to the behaviour of app state and app actions
 - even for a small/not complex apps
 
-# slide 3
 - we usually think about user taking the happy path
 - the rest we will figure out later
 - we never figure out the rest
 
-# slide 4
+# slide 3
 - Let's show this as an example
 - seems like a milion $ idea
 
-# slide 12
+# slide 11
 - Code became much harder to read and understand
 - Difficult to discover the flow of the states
 - We have a lot of state to manage for a simple app
@@ -22,31 +21,31 @@
 - We have 16 possible state compinations in this component, we want 1!
 - should not be able to tranition between all states
 
-# slide 13
+# slide 12
 - most of us done or doing such a thing
 
-# slide 15
+# slide 14
 - Seems complex
 - Want to talk about FSM
 - Been around for many years in electronics/hardware/software
 
-# slide 16
+# slide 15
 - simplest example using traffic lites
 
-# slide 17
+# slide 16
 - 3 possible states in a traffic light g y r
 
-# slide 18
+# slide 17
 - something that is predefined
 - will always happen in a single way g -> y -> r
 - otherwise we would have accidents
 
-# slide 19
+# slide 18
 - given current state and action always knows the state
 - we cna predict, that after timer g -> y
 
-# slide 21
+# slide 20
 - only in 1 of 3 states
 
-# slide 22
+# slide 21
 - always have an initial state

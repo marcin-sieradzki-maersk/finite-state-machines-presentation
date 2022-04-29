@@ -11,7 +11,7 @@ const fetchRandomImage = async () => {
 
     const response = await fetch(`https://rickandmortyapi.com/api/character/${getRandomNumber()}`);
     const data = await response.json();
-    console.log(data.image);
+
     send("FETCH_IMG_SUCCESS", { imageSrc: data.image });
   } catch (e) {
     send("FETCH_IMG_ERROR");

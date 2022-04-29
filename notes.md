@@ -10,6 +10,7 @@
 
 # slide 3
 - Let's show this as an example
+- Seems easy - steps
 - seems like a milion $ idea
 
 # slide 11

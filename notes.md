@@ -44,8 +44,11 @@
 - given current state and action always knows the state
 - we cna predict, that after timer g -> y
 
-# slide 20
+# slide 19
+- dog as an example stand/sit/lay 
+
+# slide 22
 - only in 1 of 3 states
 
-# slide 21
+# slide 23
 - always have an initial state

@@ -3,6 +3,7 @@
 theme: seriph
 # apply any windi css classes to the current slide
 class: "text-center"
+background: https://cdn.pixabay.com/photo/2016/09/01/13/52/steampunk-1636156_960_720.png
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # show line numbers in code blocks
@@ -18,7 +19,7 @@ drawings:
 
 # Developing stateful UI is hard
 
-<div class="flex gap-4 w-full items-center justify-center">
+<div class="mt-24 flex gap-4 w-full items-center justify-center">
   <img src="/error-success.jpg" class="h-72 w-72 rounded-lg" />
   <img src="/no-keyboard.jpg" class="h-72 w-72 rounded-lg" />
 </div>
@@ -266,6 +267,19 @@ const fetchRandomImage = async () => {
 
 ---
 
+# Other attributes
+
+ <ul class="p-4 w-fit">
+  <li>Can be in exactly one of a finite number of states at any given time</li>
+  <li>Can change from one state to another in response to an action(transition)</li>
+  <li>Has predefined set of actions that trigger transitions</li>
+</ul>
+<div class="h-72">
+  <img src="/dog.jpg" class="h-full aspect-square rounded-lg" />
+</div>
+
+---
+
 <CenterHeading>
   Designing State Machines
 </CenterHeading>
@@ -325,3 +339,9 @@ const fetchRandomImage = async () => {
 ---
 
 <StateMachine/>
+
+---
+
+<CenterHeading>
+  Thank you!
+</CenterHeading>

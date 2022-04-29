@@ -26,11 +26,6 @@ drawings:
 
 ---
 
-<Center>
-  <img src="/happy-path.jpg" class="h-full rounded-lg" />
-</Center>
----
-
 <CenterHeading>
 <div class="flex">
 <img src="/story.png" class="h-6 mt-2 mr-2"/> 
